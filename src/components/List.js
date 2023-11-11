@@ -12,7 +12,7 @@ const UrlsList = ({ urlsList }) => {
             <div className="urlHead">
               <img className="urlImage" src={urlsList.favicon} alt="favicon" />
               <List.Header className="urlStyle" as="a">
-                {urlsList.url}
+                <a target="_blank" href={urlsList.url}>{urlsList.url}</a>
               </List.Header>
             </div>
             <Tags keywords={urlsList.keywords} dbId={urlsList.dbId} />
