@@ -6,6 +6,7 @@ import "../styles.scss";
 const customLabelStyle = {
   marginBottom: "4px",
   marginRight: "4px",
+  fontSize:'11px'
 };
 
 const customInputStyle = {
@@ -38,7 +39,6 @@ function Tags({ keywords = [], dbId }) {
           key={tag}
           as="a"
           color={urlText && tag.includes(urlText) && "pink"}
-          size="mini"
         >
           {tag}
           <Icon name="delete" onClick={() => handleTagAction(tag, "remove")} />

@@ -1,3 +1,14 @@
+/* In your CSS file */
+@media (min-width: 400px) {
+    body {
+        margin-top: 1rem !important;
+        background-color: rgb(66, 62, 62);
+        max-width: 400px;
+        margin: 0 auto;
+        /* To center the content on larger screens */
+    }
+}
+
 .urlStyle {
     width: 100%;
     /* the element needs a fixed width (in px, em, %, etc) */

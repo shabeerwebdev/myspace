@@ -5,6 +5,7 @@ import { UrlListContext } from "./contexts/AppContext";
 import PropertyList from "./Test";
 import { getDataPromise } from "./crud/manipulateData";
 import TabExamplePointing from "./components/Tabs";
+import './styles.scss';
 
 function App() {
   const [urlsList, setUrlsList] = useState([]);
