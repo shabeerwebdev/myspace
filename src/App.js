@@ -1,10 +1,9 @@
 import React, { createContext, useEffect, useState } from "react";
-import AddSearchURLs from "./pages/AddSearchURLs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 import { UrlListContext } from "./contexts/AppContext";
 import PropertyList from "./Test";
-import { addDataPromise, getDataPromise, updateKeywordsPromise } from "./crud/manipulateData";
+import { getDataPromise } from "./crud/manipulateData";
 import TabExamplePointing from "./components/Tabs";
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
   const [inputValue, setInputValue] = useState("");
 
   useEffect(() => {
-    getUrlsList()
+    getUrlsList();
   }, []);
 
   const getUrlsList = async () => {
@@ -46,7 +45,7 @@ function App() {
           // setTags,
           inputValue,
           setInputValue,
-          getUrlsList
+          getUrlsList,
         }}
       >
         <BrowserRouter>

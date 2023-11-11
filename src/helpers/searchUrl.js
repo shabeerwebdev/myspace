@@ -16,10 +16,10 @@ export const searchByUrl = (urlsList, urlText) => {
   });
 };
 
-export const searchByTags = (urlsList=[], urlText="") => {
+export const searchByTags = (urlsList = [], urlText = "") => {
   // debugger
   const urlTextArr = urlText.split(" ").filter(Boolean);
-  return urlsList.filter(({ keywords=[] }) => {
+  return urlsList.filter(({ keywords = [] }) => {
     // debugger
     return urlTextArr.every((text) => {
       return Array.from(keywords).some((keyword) => keyword.includes(text));

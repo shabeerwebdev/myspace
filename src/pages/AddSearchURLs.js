@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import UrlInput from "../components/Input";
 import UrlsList from "../components/List";
 import { Button } from "semantic-ui-react";
@@ -9,7 +9,7 @@ import { searchByTags, searchByUrl } from "../helpers/searchUrl";
 import { addDataPromise } from "../crud/manipulateData";
 
 const AddSearchURLs = () => {
-  const { urlsList, urlText, setUrlText, showAdd, currOption,getUrlsList } =
+  const { urlsList, urlText, setUrlText, showAdd, currOption, getUrlsList } =
     useContext(UrlListContext);
 
   const newUrlEntry = () => {

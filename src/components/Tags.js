@@ -1,9 +1,8 @@
 import React, { useContext, useState } from "react";
 import { Icon, Input, Label } from "semantic-ui-react";
 import { UrlListContext } from "../contexts/AppContext";
-import { updateKeywordsForId } from "../helpers/updateTags";
 import { updateKeywordsPromise } from "../crud/manipulateData";
-import '../styles.scss'
+import "../styles.scss";
 const customLabelStyle = {
   marginBottom: "4px",
   marginRight: "4px",
@@ -11,30 +10,24 @@ const customLabelStyle = {
 
 const customInputStyle = {
   marginLeft: "5px",
-  fontSize: '12px',
-  marginBottom: '4px'
+  fontSize: "12px",
+  marginBottom: "4px",
 };
 
-function Tags({ keywords=[], dbId }) {
-  const [tags, setTags] = useState(new Set(keywords));
-  const { urlsList, urlText, getUrlsList } = useContext(UrlListContext);
-  const urlTextArr = urlText.split(" ").filter(Boolean);
+function Tags({ keywords = [], dbId }) {
+  const { urlText, getUrlsList } = useContext(UrlListContext);
   const [inputValue, setInputValue] = useState("");
 
   const handleTagAction = (tag, action) => {
-    // setTags((prevTags) => {
-    //   const newTags = new Set(prevTags);
-    //   return newTags;
-    // });
-      if (action === "add" && inputValue.trim() !== "") {
-        updateKeywordsPromise(dbId, tag, "add")
-          .then(() => setInputValue(""))
-          .then(() => getUrlsList());
-      } else if (action === "remove") {
-        updateKeywordsPromise(dbId, tag, "remove")
-          .then(() => setInputValue(""))
-          .then(() => getUrlsList());
-      }
+    if (action === "add" && inputValue.trim() !== "") {
+      updateKeywordsPromise(dbId, tag, "add")
+        .then(() => setInputValue(""))
+        .then(() => getUrlsList());
+    } else if (action === "remove") {
+      updateKeywordsPromise(dbId, tag, "remove")
+        .then(() => setInputValue(""))
+        .then(() => getUrlsList());
+    }
   };
 
   return (

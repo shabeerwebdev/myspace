@@ -13,11 +13,12 @@ export const getDataPromise = () => {
   return new Promise((resolve, reject) => {
     onValue(ref(database, "urlsList/"), (snapshot) => {
       const data = snapshot.val();
-      const dataWithId = Object.keys(data).map((key) =>{
+      const dataWithId = Object.keys(data).map((key) => {
         return {
           dbId: key,
           ...data[key],
-        };});
+        };
+      });
       if (!!dataWithId) {
         resolve(dataWithId);
       } else {

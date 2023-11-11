@@ -1,7 +1,7 @@
 import React from "react";
 import { Tab } from "semantic-ui-react";
 import AddSearchURLs from "../pages/AddSearchURLs";
-import '../styles.scss'
+import "../styles.scss";
 const panes = [
   {
     menuItem: "Tab 1",
@@ -21,8 +21,6 @@ const panes = [
   },
 ];
 
-const TabPointing = () => (
-  <Tab menu={{ pointing: true }} panes={panes} />
-);
+const TabPointing = () => <Tab menu={{ pointing: true }} panes={panes} />;
 
 export default TabPointing;
