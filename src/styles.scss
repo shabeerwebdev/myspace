@@ -1,0 +1,41 @@
+.urlStyle {
+    width: 100%;
+    /* the element needs a fixed width (in px, em, %, etc) */
+    overflow: hidden;
+    /* make sure it hides the content that overflows */
+    white-space: nowrap;
+    /* don't break the line */
+    text-overflow: ellipsis;
+}
+
+.urlImage {
+    width: 1.5rem;
+}
+
+.urlHead {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 4px;
+}
+
+.tagsStyle {
+    margin-left: 2.1rem;
+}
+
+.ui.segment {
+    border: none !important;
+}
+
+.ui.menu {
+    justify-content: center;
+
+    a.item {
+        flex: 1;
+        box-sizing: border-box;
+    }
+}
+
+.ui.menu>* {
+    flex: 1;
+}

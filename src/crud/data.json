@@ -1,0 +1,40 @@
+{
+    "urlsList": [
+        {
+            "id": "ID1698574675433",
+            "url": "www.youtube.com/watch?v=sP7ANcTpJr8",
+            "domain": "www.youtube.com",
+            "path": "/watch",
+            "protocol": "https:",
+            "favicon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=512",
+            "keywords": ["hum", "tere", "bin"]
+        },
+        {
+            "id": "ID1698574675434",
+            "url": "semantic-ui.com/elements/image.html#size",
+            "domain": "semantic-ui.com",
+            "path": "/elements/image.html",
+            "protocol": "https:",
+            "favicon": "https://www.google.com/s2/favicons?domain=jiraent.staples.com&sz=512",
+            "keywords": ["jyun", "ki", "tum"]
+        },
+        {
+            "id": "ID1698574675435",
+            "url": "blog.logrocket.com/react-context-api-deep-dive-examples/",
+            "domain": "blog.logrocket.com",
+            "path": "/react-context-api-deep-dive-examples/",
+            "protocol": "https:",
+            "favicon": "https://www.google.com/s2/favicons?domain=blog.logrocket.com&sz=512",
+            "keywords": ["aaja", "sanam"]
+        },
+        {
+            "id": "ID1698574675436",
+            "url": "www.facebook.com/",
+            "domain": "www.facebook.com",
+            "path": "/",
+            "protocol": "https:",
+            "favicon": "https://www.google.com/s2/favicons?domain=www.facebook.com&sz=512",
+            "keywords": ["tere", "liye", "hi"]
+        }
+    ]
+}
